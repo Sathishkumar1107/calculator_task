@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="calContainer">
+	<div id="innerContainer">
+		<div id="display">0</div>
+			<div id="numbersContainer">
+				<div id="numberRow1" class="numberRows">
+					<div class="red values" id="reset" onclick="clearDisplay()">c</div>
+					<div class="values" onclick="backspace()">&#8592;</div>
+					<div class="values" onclick="appendDom('.')">.</div>
+					<div class="blue values" onclick="setOperator('*')">x</div>
+				</div>
+				<div id="numberRow2" class="numberRows">
+					<div class="values" onclick="appendDom('7')">7</div>
+					<div class="values" onclick="appendDom('8')">8</div>
+					<div class="values" onclick="appendDom('9')">9</div>
+					<div class="blue values" onclick="setOperator('/')">/</div>
+				</div>
+				<div id="numberRow3" class="numberRows">
+					<div class="values" onclick="appendDom('4')">4</div>
+					<div class="values" onclick="appendDom('5')">5</div>
+					<div class="values" onclick="appendDom('6')">6</div>
+					<div class="blue values" onclick="setOperator('-')">-</div>
+				</div>
+				<div id="numberRow4" class="numberRows">
+					<div class="values" id="num1" onclick="appendDom('1')">1</div>
+					<div class="values" onclick="appendDom('2')">2</div>
+					<div class="values" onclick="appendDom('3')">3</div>
+					<div class="blue values" onclick="setOperator('+')">+</div>
+				</div>
+				<div id="numberRow5" class="numberRows">
+					<div class="values" onclick="appendDom('0')">0</div>
+					<div class="values" onclick="appendDom('00')">00</div>
+					<div id="equalsTo" onclick="calculateResult()">=</div>
+				</div>
+			</div>
+		
+	</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
